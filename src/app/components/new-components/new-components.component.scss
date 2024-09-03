@@ -1,0 +1,24 @@
+:host {
+    h1 {
+        background: red;
+    }
+}
+
+:host-context(.theme-dark){
+    h1{
+        background: black;
+        color: #fff;
+    }
+}
+:host-context(.theme-dark){
+    p{
+        background: blue;
+        color: #fff;
+    }
+}
+
+::ng-deep{
+    .theme-dark{
+        border: 5px solid blue;
+    }
+}
